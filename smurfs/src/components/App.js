@@ -14,6 +14,7 @@ class App extends Component {
         <div>Have fun!</div>
 
         <Smurfs />
+        <SmurfForm />
       </div>
       
     );
