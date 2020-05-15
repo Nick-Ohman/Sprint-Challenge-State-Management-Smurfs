@@ -9,6 +9,16 @@ const initialState = {
 
 export const smurfReducer = (state = initialState, action) => {
     switch (action.type){
+        case "SMURF_ARRAY":
+            return{
+                ...state,
+                smurfs: action.payload,
+                isFetching: false,
+            };
+            case "SMURF_ADD":
+                return{
+                    ...state,
+                }
 
     default:
         return state;
